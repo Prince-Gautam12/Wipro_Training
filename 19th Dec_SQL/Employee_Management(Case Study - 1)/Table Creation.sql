@@ -1,0 +1,13 @@
+CREATE TABLE Departments (
+	DeptId INT PRIMARY KEY,
+	DeptName VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Employees (
+	EmpID INT IDENTITY(1,1) PRIMARY KEY,
+	EmpName VARCHAR(50),
+	Email VARCHAR(100),
+	Salary DECIMAL(10,2),
+	JoinDate DATE,
+	DeptId INT
+);
